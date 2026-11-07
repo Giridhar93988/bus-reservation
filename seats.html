@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BusGo - Select Seats</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🚌 BusGo</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="mybookings.html">My Bookings</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Select Your Seats</h2>
+
+        <p id="selectedBusInfo" style="text-align:center">
+            Choose your preferred seats.
+        </p>
+
+        <div class="legend">
+            <span>🟩 Available</span>
+            <span>🟦 Selected</span>
+            <span>⬜ Booked</span>
+        </div>
+
+        <div class="seat-layout" id="seatLayout"></div>
+
+        <h3 id="seatTotal" style="text-align:center">
+            Selected Seats: 0
+        </h3>
+
+        <h3 id="seatPrice" style="text-align:center;margin:15px">
+            Total: ₹0
+        </h3>
+
+        <button onclick="continueBooking()"
+            style="display:block;margin:auto">
+            Continue Booking
+        </button>
+    </div>
+</div>
+
+</body>
+</html>

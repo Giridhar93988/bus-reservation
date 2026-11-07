@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BusGo - Search Buses</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🚌 BusGo</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="mybookings.html">My Bookings</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Search Available Buses</h2>
+
+        <form id="searchForm">
+            <input type="text" id="source"
+                placeholder="From - Kurnool" required>
+
+            <input type="text" id="destination"
+                placeholder="To - Hyderabad" required>
+
+            <input type="date" id="travelDate" required>
+
+            <button type="submit">Search Buses</button>
+        </form>
+    </div>
+
+    <h2>Available Buses</h2>
+    <div id="busResults" class="grid">
+        <p>Enter your journey details to find buses.</p>
+    </div>
+</div>
+
+</body>
+</html>

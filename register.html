@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BusGo - Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🚌 BusGo</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input type="text" id="regName"
+                placeholder="Full Name" required>
+
+            <input type="email" id="regEmail"
+                placeholder="Email Address" required>
+
+            <input type="password" id="regPassword"
+                placeholder="Create Password" minlength="6" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p class="message" id="registerMessage"></p>
+
+        <p>Already registered?
+            <a href="login.html">Login here</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
